@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^3.14.0"
+    "fastify": "^3.14.0",
+    "fastify-cors": "^5.2.0"
   },
- "bin": {
-   "apify-jsfile": "./app.js"
- }
+  "bin": {
+    "apify-jsfile": "./app.js"
+  }
 }
-q
