@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fastify = require('fastify')({logger: true})
 const start = async(port) => {
     console.log('server has started')

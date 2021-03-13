@@ -1,6 +1,6 @@
 {
   "name": "files-as-endpoints",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "fastify": "^3.14.0"
-  }
+  },
+ "bin": {
+   "apify-jsfile": "./app.js"
+ }
 }
+q
