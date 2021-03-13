@@ -9,7 +9,7 @@ const createGetEndpoint = (fastify, endpointpath, fnName, fn) => {
     if (typeof fn === "function") {
         fastify.get(`/${ep}/${fnName}`, (req, res) => {
             try {
-                const result = fn.apply(null, Object.values(req.body))
+                const result = fn.apply(null, Object.values(req.query))
                 console.log("Result is", result)
                 res.code(200)
                 .header('Content-Type', 'application/json; charset=utf-8')
